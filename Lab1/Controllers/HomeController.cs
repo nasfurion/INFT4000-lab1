@@ -15,7 +15,12 @@ namespace Lab1.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Person person = new Person();
+
+            person.FirstName = "Diego";
+            person.LastName = "Amadio";
+
+            return View(person);
         }
 
         public IActionResult Privacy()
